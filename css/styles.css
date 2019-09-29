@@ -17,6 +17,18 @@ html, body {
   float: left;
   padding: 20px;
 }
+.zoom{
+  padding: 50px;
+  background-color: green;
+  transition: transform .2s; /* Animation */
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.hover-zoom {
+  transform: scale(1.5);
+}
 
 .icon-link a {
   text-align: center;
