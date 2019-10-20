@@ -1,30 +1,39 @@
 <html lang="en">
 
 <head>
-	Iteration: 1.7
+	Iteration: 1.8 Goal
+	Drop Down Menu
+	Buttons
+	using 
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<meta name="description"
-		content="Hi, I'm Frank Yang and I am a full-stack web developer with focus on security applications.">
+		content="Hi, I'm Frank Yang and I am a backend security developer who is inspired to be a full-stack developer.">
+	<!-- Potential keywords: Frank, Yang, IBM, security, full-stack, software, developer, Austin, Texas, UTD, UT Dallas, New Graduate -->
 	<meta name="keywords"
-		content="Frank, Yang, IBM, security, Westwood High School, Westwood, Austin,Texas,UT Dallas,UTD">
+		content="Frank, Yang, IBM, security, full-stack, software, developer, Austin, Texas, UTD, UT Dallas, New Graduate">
 	<meta name="author" content="Frank Yang">
 
 	<title>Frank Yang</title>
+	<link href="css/styles.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
 		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-	<link href="css/styles.css" rel="stylesheet">
 	<link href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css' rel='stylesheet'
 		type='text/css'>
 	<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 </head>
 
 <body>
+	<div id="nav-placeholder">
+
+	</div>
+	{% include common-nav.html %}
 	<div class="background">
 		<div class="container">
 			<div class="content-container">
 				<h2 class="jumbo-text">Hi, I'm <span class="highlight">Frank</span> and I am a full-stack web developer
-					located in <i class="pin-icon icon ion-ios-pin"></i> <span class="highlight2">Austin</span>, <span class="highlight2">Texas</span>. </h2>
+					located in <i class="pin-icon icon ion-ios-pin"></i> <span class="highlight2">Austin, Texas</span>.
+				</h2>
 				<p class="description">I am a senior from the University of Texas at Dallas persuing a Bachelor's in
 					Computer Science. I previously attended high school at Westwood High School in Austin, Texas.</p>
 				<div class="row">
@@ -52,7 +61,7 @@
 			</div>
 		</div>
 	</div>
-
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
 		crossorigin="anonymous"></script>
@@ -62,6 +71,12 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"></script>
+	<script>js / main.js</script>
+	<script>
+		$(function () {
+			$("#nav-placeholder").load("nav.html");
+		});
+	</script>
 </body>
 
 </html>
